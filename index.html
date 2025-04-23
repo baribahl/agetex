@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agetex - Expert en impression textile par transfert et machines pour l'industrie textile">
+    <meta name="keywords" content="textile printing, transfer paper, textile machinery, sublimation, Monti Antonio, Sublitex, TTS">
+    <title>Agetex - Expert en Impression Textile par Transfert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Removed translations.js as we're keeping only French version -->
+    <script type="module" src="./data.js"></script>
+    <script type="module" src="./contact.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="./partners.js" defer></script>
+    <!-- Language toggle script removed - French only version -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2C3E50',
+                        accent: '#F39C12',
+                        textcolor: '#4A4A4A', 
+                        bgcolor: '#FAFAFA',
+                        light: '#ECF0F1',
+                        dark: '#1A2530'
+                    },
+                    fontFamily: {
+                        'heading': ['Playfair Display', 'serif'],
+                        'subheading': ['Roboto Slab', 'serif'],
+                        'body': ['Raleway', 'sans-serif'],
+                        'sans': ['Source Sans Pro', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-body text-textcolor bg-bgcolor">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-primary text-white shadow-xl z-50 border-b-2 border-accent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="font-heading text-2xl font-bold flex items-center">
+                        <img src="./agetex-logo-nav-updated.svg" 
+                             alt="Agetex" 
+                             class="h-10 nav-logo"
+                             onerror="this.src='./images/agetex-logo-nav-updated.svg'">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#about" class="nav-link text-white hover:text-accent transition-colors font-medium text-base tracking-wide">
+                        <span data-i18n="nav-about">À propos</span>
+                    </a>
+                    <a href="#partners" class="nav-link text-white hover:text-accent transition-colors font-medium text-base tracking-wide">
+                        <span data-i18n="nav-partners">Partenaires</span>
+                    </a>
+                    <a href="#contact" class="nav-link text-white hover:text-accent transition-colors font-medium text-base tracking-wide">
+                        <span data-i18n="nav-contact">Contact</span>
+                    </a>
+                </div>
+                <!-- Language toggle removed - French only version -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-primary">
+                        <span class="text-accent">Agetex</span> - Expert en Impression Textile par Transfert
+                    </h1>
+                    <p class="text-lg font-subheading text-textcolor mb-8 leading-relaxed">
+                        Depuis 1994, nous combinons expertise technique et service client pour représenter des leaders mondiaux de l'industrie textile et de la sublimation.
+                    </p>
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-4">
+                        <a href="#contact" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors shadow-lg text-center">
+                            Contactez-nous
+                        </a>
+                        <a href="#partners" class="inline-flex items-center justify-center bg-transparent border border-gray-300 text-primary px-6 py-3 rounded-md font-medium hover:border-primary hover:text-accent transition-colors text-center">
+                            <i class="far fa-handshake mr-2"></i>Nos partenaires
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="./images/moJcgkn.html.png" 
+                         alt="Christophe Spies - Expert en Impression Textile par Transfert" 
+                         class="w-full h-auto object-cover rounded-md shadow-lg"
+                         onerror="handleImageError(this, 'profile')">
+                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-primary/90 to-transparent rounded-b-md">
+                        <h3 class="text-white font-heading text-xl">Christophe Spies</h3>
+                        <p class="text-white/90 font-sans">Agent commercial textile depuis 1994</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-gradient-to-b from-white to-bgcolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 section-title">À propos</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Left column - Company description -->
+                <div class="lg:col-span-7">
+                    <p class="text-lg mb-6 text-primary">
+                        <span class="font-semibold text-accent">Agetex</span> représente des fabricants leaders dans l'industrie de l'impression textile par transfert et sublimation.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-subheading font-semibold text-primary mb-4" data-i18n="about-expertise-title">Notre valeur ajoutée</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5 mr-3">
+                                    <i class="fas fa-check text-accent text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-primary" data-i18n="about-service-title">Service après-vente complet</p>
+                                    <p class="text-sm text-gray-600" data-i18n="about-service-desc">Installation, support technique, maintenance et pièces détachées</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5 mr-3">
+                                    <i class="fas fa-check text-accent text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-primary" data-i18n="about-experience-title">30+ ans d'expérience</p>
+                                    <p class="text-sm text-gray-600" data-i18n="about-experience-desc">Expertise technique reconnue auprès des leaders de l'industrie</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5 mr-3">
+                                    <i class="fas fa-check text-accent text-sm"></i>
+                                </div>
+                                <div>
+                                    <p class="font-medium text-primary" data-i18n="about-network-title">Réseau international</p>
+                                    <p class="text-sm text-gray-600" data-i18n="about-network-desc">Distribution et support technique dans plusieurs pays</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Removed redundant region mentions -->
+                </div>
+                
+                <!-- Right column - Expertise areas -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-xl font-subheading font-semibold text-primary mb-6 border-b border-accent/30 pb-2" data-i18n="about-products-title">
+                            Nos produits
+                        </h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-print text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Papiers transfert sublimation</h4>
+                                    <p class="text-sm text-gray-600">Solutions adaptées à tous types d'applications pour l'impression textile</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-industry text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Calandres et presses</h4>
+                                    <p class="text-sm text-gray-600">Équipements de haute qualité pour le transfert thermique</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
+                                    <i class="fas fa-tools text-accent text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-primary">Consommables techniques</h4>
+                                    <p class="text-sm text-gray-600">Produits complémentaires pour optimiser vos processus d'impression</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold text-primary mb-12 section-title">Partenaires</h2>
+            
+            <!-- Partners grid with accordion-style detail reveal -->
+            <div class="space-y-6">
+                <!-- Monti Antonio Partner Card -->
+                <div class="partner-accordion">
+                    <div class="partner-header bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition-all cursor-pointer">
+                        <div class="grid grid-cols-12 items-center">
+                            <!-- Partner logo/image column -->
+                            <div class="col-span-3 lg:col-span-2">
+                                <div class="relative h-24 overflow-hidden">
+                                    <img src="./partner1.svg" alt="Monti Antonio" class="h-full w-full object-contain p-4">
+                                </div>
+                            </div>
+                            
+                            <!-- Partner info column -->
+                            <div class="col-span-7 lg:col-span-8 p-4">
+                                <h3 class="text-xl font-heading font-semibold text-primary">Monti Antonio</h3>
+                                <p class="text-gray-600 text-sm mt-1">Leader européen en calandres et solutions de transfert thermique pour l'industrie textile.</p>
+                            </div>
+                            
+                            <!-- Toggle button column -->
+                            <div class="col-span-2 lg:col-span-2 flex justify-center">
+                                <button class="toggle-btn w-10 h-10 rounded-full bg-light flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
+                                    <i class="fas fa-chevron-down transform transition-transform"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Partner content panel -->
+                    <div class="partner-content bg-white rounded-lg shadow-lg p-6 mt-4 overflow-visible">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                            <!-- Left column for text content -->
+                            <div class="lg:col-span-5">
+                                <div class="bg-light p-6 rounded-lg h-full">
+                                <p class="text-gray-700 mb-4">
+                                    Leader européen incontesté et premier fournisseur du marché français, Monti Antonio excelle dans la conception et la fabrication de calandres et de solutions de transfert thermique pour les professionnels de l'impression textile, du contre-collage et de la lamination.
+                                </p>
+                                
+                                <h4 class="text-xl font-heading font-semibold text-primary mb-4 border-b border-accent pb-2">
+                                    <i class="fas fa-industry text-accent mr-2"></i>Points Forts
+                                </h4>
+                                
+                                <ul class="space-y-3 mb-4">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                        <span>Calandres jusqu'à <strong class="font-medium">550cm</strong> de laize</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-tools text-accent mt-1 mr-2"></i>
+                                        <span>Service complet : installation, maintenance et pièces détachées</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-award text-accent mt-1 mr-2"></i>
+                                        <span>Garantie italienne de qualité et fiabilité depuis plus de 50 ans</span>
+                                    </li>
+                                </ul>
+                                
+                                <div class="mt-6">
+                                    <img src="./images/photo-monti-machine-no-bg.png" 
+                                         alt="Machine Monti Antonio" 
+                                         class="w-full h-auto"
+                                         onerror="handleImageError(this, 'machinery')">
+                                </div>
+
+                                <div class="mt-6 text-right">
+                                    <a href="https://www.montiantonio.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-accent hover:text-primary transition-colors">
+                                        <span class="mr-1">Visiter le site officiel</span>
+                                        <i class="fas fa-external-link-alt text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            </div>
+                            
+                            <!-- Right column for media -->
+                            <div class="lg:col-span-7">
+                                <img src="./images/photo-monti-machine-replacement-parts.jpg" 
+                                     alt="Pièces détachées Monti Antonio" 
+                                     class="w-full h-full rounded-lg shadow-sm object-cover"
+                                     style="aspect-ratio: 16/10; object-position: center"
+                                     onerror="handleImageError(this, 'machinery')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sublitex Partner Card -->
+                <div class="partner-accordion">
+                    <div class="partner-header bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition-all cursor-pointer">
+                        <div class="grid grid-cols-12 items-center">
+                            <!-- Partner logo/image column -->
+                            <div class="col-span-3 lg:col-span-2">
+                                <div class="relative h-24 overflow-hidden">
+                                    <img src="./partner2.svg" alt="Sublitex" class="h-full w-full object-contain p-4">
+                                </div>
+                            </div>
+                            
+                            <!-- Partner info column -->
+                            <div class="col-span-7 lg:col-span-8 p-4">
+                                <h3 class="text-xl font-heading font-semibold text-primary">Sublitex</h3>
+                                <p class="text-gray-600 text-sm mt-1">Leader mondial de l'impression digitale pour la mode, le sport et l'ameublement.</p>
+                            </div>
+                            
+                            <!-- Toggle button column -->
+                            <div class="col-span-2 lg:col-span-2 flex justify-center">
+                                <button class="toggle-btn w-10 h-10 rounded-full bg-light flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
+                                    <i class="fas fa-chevron-down transform transition-transform"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Partner content panel -->
+                    <div class="partner-content bg-white rounded-lg shadow-lg p-6 mt-4 overflow-visible" id="sublitex-section">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                            <!-- Left column for text -->
+                            <div class="lg:col-span-5">
+                                <div class="bg-light p-6 rounded-lg h-full">
+                                <p class="text-gray-700 mb-4">
+                                    Sublitex est un leader mondial de l'impression digitale pour le marché de la mode, du sport, et de l'ameublement avec une capacité de production exceptionnelle.
+                                </p>
+                                
+                                <h4 class="text-xl font-heading font-semibold text-primary mb-4 border-b border-accent pb-2">
+                                    <i class="fas fa-print text-accent mr-2"></i>Capacités industrielles
+                                </h4>
+                                
+                                <ul class="space-y-3 mb-6">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                        <span><strong class="font-medium">40.000m/jour</strong> de capacité d'impression</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-ruler-horizontal text-accent mt-1 mr-2"></i>
+                                        <span>Laize <strong class="font-medium">160cm et 185cm</strong></span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-palette text-accent mt-1 mr-2"></i>
+                                        <span>Collections renouvelées <strong class="font-medium">chaque semaine</strong></span>
+                                    </li>
+                                </ul>
+
+                                <!-- Videos moved to right column -->
+
+                                    <a href="https://www.sublitex.com/" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer" 
+                                       class="inline-flex items-center text-accent hover:text-primary transition-colors mt-4">
+                                        <span class="mr-1">Visiter le site officiel</span>
+                                        <i class="fas fa-external-link-alt text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Right column for media -->
+                            <div class="lg:col-span-7">
+                                <!-- Video elements and image -->
+                                <div class="space-y-4">
+                                    <!-- Main video -->
+                                    <div class="relative rounded-lg overflow-hidden shadow-lg">
+                                        <div id="sublitex-video-1" class="w-full aspect-video"></div>
+                                    </div>
+                                    
+                                    <!-- Grid for secondary video and image -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <!-- Secondary video -->
+                                        <div class="relative rounded-lg overflow-hidden shadow-lg">
+                                            <div id="sublitex-video-2" class="w-full aspect-video"></div>
+                                        </div>
+                                        
+                                        <!-- Image -->
+                                        <div>
+                                            <img src="./images/photo-sublitex-machine-ms-lario-expo.jpg"
+                                                 alt="MS MiniLario Printer" 
+                                                 class="w-full h-auto rounded-lg shadow-lg object-cover"
+                                                 style="aspect-ratio: 16/9"
+                                                 onerror="handleImageError(this, 'machinery')">
+                                            <p class="text-sm text-gray-600 mt-2">
+                                                La dernière génération d'imprimante MS MiniLario utilisée par Sublitex
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TTS Partner Card -->
+                <div class="partner-accordion">
+                    <div class="partner-header bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 hover:shadow-md transition-all cursor-pointer">
+                        <div class="grid grid-cols-12 items-center">
+                            <!-- Partner logo/image column -->
+                            <div class="col-span-3 lg:col-span-2">
+                                <div class="relative h-24 overflow-hidden">
+                                    <img src="./logo-tts-full.svg" alt="TTS" class="h-full w-full object-contain p-4">
+                                </div>
+                            </div>
+                            
+                            <!-- Partner info column -->
+                            <div class="col-span-7 lg:col-span-8 p-4">
+                                <h3 class="text-xl font-heading font-semibold text-primary">TTS</h3>
+                                <p class="text-gray-600 text-sm mt-1">Solutions complètes en papier de sublimation et protection pour la communication visuelle.</p>
+                            </div>
+                            
+                            <!-- Toggle button column -->
+                            <div class="col-span-2 lg:col-span-2 flex justify-center">
+                                <button class="toggle-btn w-10 h-10 rounded-full bg-light flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
+                                    <i class="fas fa-chevron-down transform transition-transform"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Partner content panel -->
+                    <div class="partner-content bg-white rounded-lg shadow-lg p-6 mt-4 overflow-visible">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                            <!-- Left column for text -->
+                            <div class="lg:col-span-5">
+                                <div class="bg-light p-6 rounded-lg h-full">
+                                <p class="text-gray-700 mb-4">
+                                    TTS est le leader européen des solutions textiles pour la communication visuelle et l'impression numérique, offrant une gamme complète de produits innovants et écologiques.
+                                </p>
+                                
+                                <h4 class="text-xl font-heading font-semibold text-primary mb-4 border-b border-accent pb-2">
+                                    <i class="fas fa-box-open text-accent mr-2"></i>Notre Gamme
+                                </h4>
+                                
+                                <ul class="space-y-3 mb-4">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
+                                        <span>Papiers de sublimation haute performance</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-shield-alt text-accent mt-1 mr-2"></i>
+                                        <span>Papiers de protection pour calandres</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-print text-accent mt-1 mr-2"></i>
+                                        <span>Supports spéciaux pour sérigraphie</span>
+                                    </li>
+                                </ul>
+
+                                    <a href="https://www.texo-trade.com/" 
+                                       target="_blank" 
+                                       rel="noopener noreferrer" 
+                                       class="inline-flex items-center text-accent hover:text-primary transition-colors mt-4">
+                                        <span class="mr-1">Visiter le site officiel</span>
+                                        <i class="fas fa-external-link-alt text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Right column for media -->
+                            <div class="lg:col-span-7 space-y-6">
+                                <!-- Main warehouse image -->
+                                <img src="./images/photo-tts-warehouse-skyview.webp"
+                                     alt="TTS Warehouse Aerial View" 
+                                     class="w-full h-auto rounded-lg shadow-lg"
+                                     onerror="handleImageError(this, 'machinery')">
+                                
+                                <!-- Two columns of additional images -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <img src="./images/photo-tts-team-cropped-square.jpg"
+                                         alt="TTS Team" 
+                                         class="w-full h-auto rounded-lg shadow-lg"
+                                         onerror="handleImageError(this, 'machinery')">
+                                         
+                                    <img src="./images/photo-tts-warehouse-indoor-shelves-03.jpg"
+                                         alt="TTS Warehouse Interior" 
+                                         class="w-full h-auto rounded-lg shadow-lg"
+                                         style="aspect-ratio: 1/1; object-fit: cover;"
+                                         onerror="handleImageError(this, 'machinery')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-bgcolor">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-heading font-bold text-primary mb-12 section-title">Contact</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact info column -->
+                <div>
+                    <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
+                        <div class="flex items-center mb-6">
+                            <img src="./images/moJcgkn.html.png" 
+                                 alt="Christophe Spies" 
+                                 class="w-16 h-16 rounded-full object-cover mr-4 border-2 border-accent"
+                                 onerror="handleImageError(this, 'profile')">
+                            <div>
+                                <h3 class="text-xl font-heading font-bold">Christophe Spies</h3>
+                                <p class="text-gray-600">Agent commercial dans l'industrie textile</p>
+                                <p class="text-accent font-medium text-sm mt-1">
+                                    <i class="far fa-calendar-alt mr-1"></i> Fondateur d'Agetex depuis 1994
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-5">
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-accent mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-sans font-semibold text-primary">Téléphone</h4>
+                                    <a href="tel:+33000000000" class="text-gray-700 hover:text-accent transition-colors">+33 00 00 00 00</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-accent mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-sans font-semibold text-primary">Email</h4>
+                                    <a href="mailto:agetex73@wanadoo.fr" class="text-gray-700 hover:text-accent transition-colors">agetex73@wanadoo.fr</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-accent mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-sans font-semibold text-primary">Localisation</h4>
+                                    <p class="text-gray-700">Chambéry, France</p>
+                                    <!-- Region information removed -->
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-language text-accent mt-1 mr-4 w-5 text-center"></i>
+                                <div>
+                                    <h4 class="font-sans font-semibold text-primary">Langues</h4>
+                                    <p class="text-gray-700">français (natif), anglais, allemand</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Company background - very brief -->
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h4 class="font-subheading font-semibold text-xl mb-4 pb-2 border-b border-gray-200">
+                            <i class="fas fa-briefcase text-accent mr-2"></i> Expérience
+                        </h4>
+                        <div class="space-y-4">
+                            <div>
+                                <h5 class="font-medium text-primary">Chef d'entreprise - Agetex</h5>
+                                <p class="text-sm text-accent">
+                                    <i class="far fa-calendar-alt mr-1"></i> Depuis 1994
+                                </p>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    Représentation de leaders de l'industrie textile au niveau international.
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h5 class="font-medium text-primary">Area Manager - KBC (Allemagne)</h5>
+                                <p class="text-sm text-accent">
+                                    <i class="far fa-calendar-alt mr-1"></i> 1989 - 1994
+                                </p>
+                                <p class="text-sm text-gray-600 mt-1">
+                                    Division papier transfert.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact form column -->
+                <div>
+                    <div class="bg-white rounded-lg shadow-sm p-6">
+                        <h3 class="text-xl font-subheading font-semibold text-primary mb-6 pb-3 border-b border-gray-200">
+                            <i class="far fa-envelope text-accent mr-2"></i>
+                            Contactez-nous
+                        </h3>
+                        <p class="mb-6 text-gray-600">
+                            N'hésitez pas à nous contacter pour toute demande concernant nos services ou nos partenaires.
+                        </p>
+                        
+                        <form class="space-y-5" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                                    <span class="required">*</span>
+                                    <span data-i18n="contact-name">Nom</span>
+                                </label>
+                                <div class="relative rounded-md shadow-sm">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <i class="far fa-user text-gray-400"></i>
+                                    </div>
+                                    <input type="text" 
+                                           id="name" 
+                                           name="name" 
+                                           required
+                                           class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-accent focus:border-accent transition-colors" 
+                                           placeholder="Votre nom">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                                    <span class="required">*</span>
+                                    <span data-i18n="contact-email">Email</span>
+                                </label>
+                                <div class="relative rounded-md shadow-sm">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <i class="far fa-envelope text-gray-400"></i>
+                                    </div>
+                                    <input type="email" 
+                                           id="email" 
+                                           name="email" 
+                                           required
+                                           class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-accent focus:border-accent transition-colors" 
+                                           placeholder="votre@email.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                                    <span class="required">*</span>
+                                    <span data-i18n="contact-message">Message</span>
+                                </label>
+                                <div class="relative rounded-md shadow-sm">
+                                    <div class="absolute top-3 left-3 flex items-start pointer-events-none">
+                                        <i class="far fa-comment text-gray-400"></i>
+                                    </div>
+                                    <textarea id="message" 
+                                              name="message" 
+                                              rows="4" 
+                                              required
+                                              class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-accent focus:border-accent transition-colors" 
+                                              placeholder="Comment puis-je vous aider ?"></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" 
+                                        class="w-full bg-primary text-white px-4 py-3 rounded-lg hover:bg-accent focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                                        disabled>
+                                    <span class="flex items-center justify-center">
+                                        <i class="fas fa-paper-plane mr-2"></i>
+                                        <span data-i18n="contact-send">Envoyer le message</span>
+                                    </span>
+                                </button>
+                                
+                                <!-- Removed sync status indicator as requested -->
+                                <!-- Connection status indicator removed -->
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Partners quick links -->
+                    <div class="mt-6">
+                        <h4 class="font-medium text-primary mb-3">
+                            <i class="fas fa-handshake text-accent mr-2"></i> Nos partenaires
+                        </h4>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="http://www.montiantonio.com" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white px-3 py-1.5 rounded-md shadow-sm hover:shadow-md transition-all border border-gray-200 hover:border-accent">
+                                <span class="text-accent">Monti Antonio</span>
+                                <i class="fas fa-external-link-alt text-xs ml-1 text-gray-400"></i>
+                            </a>
+                            <a href="http://www.sublitex.com" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white px-3 py-1.5 rounded-md shadow-sm hover:shadow-md transition-all border border-gray-200 hover:border-accent">
+                                <span class="text-accent">Sublitex</span>
+                                <i class="fas fa-external-link-alt text-xs ml-1 text-gray-400"></i>
+                            </a>
+                            <a href="http://www.texo-trade.com" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white px-3 py-1.5 rounded-md shadow-sm hover:shadow-md transition-all border border-gray-200 hover:border-accent">
+                                <span class="text-accent">TTS</span>
+                                <i class="fas fa-external-link-alt text-xs ml-1 text-gray-400"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-sm text-gray-500">
+                        © 2024 Christophe Spies - Agetex. Tous droits réservés.
+                    </p>
+                </div>
+                
+                <div class="flex space-x-8">
+                    <a href="#about" class="text-sm text-gray-500 hover:text-accent transition-colors">À propos</a>
+                    <a href="#partners" class="text-sm text-gray-500 hover:text-accent transition-colors">Partenaires</a>
+                    <a href="#contact" class="text-sm text-gray-500 hover:text-accent transition-colors">Contact</a>
+                </div>
+                
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu toggle and back to top buttons -->
+    <div class="md:hidden fixed bottom-6 right-6 bg-primary text-white p-4 rounded-full shadow-lg z-40 hover:bg-accent transition-colors" id="mobile-menu-button">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <div class="fixed bottom-6 left-6 bg-accent text-white p-4 rounded-full shadow-lg z-30 opacity-0 invisible transition-all duration-300 hover:bg-primary" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="md:hidden fixed inset-0 bg-primary bg-opacity-95 z-50 transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
+        <div class="flex justify-between items-center p-4 border-b border-white border-opacity-20">
+            <h3 class="text-xl font-heading font-bold text-white">Menu</h3>
+            <button class="text-white p-2" id="close-mobile-menu">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="p-6">
+            <ul class="space-y-6">
+                <li><a href="#about" class="text-white text-lg font-heading block hover:text-accent transition-colors">À propos</a></li>
+                <li><a href="#partners" class="text-white text-lg font-heading block hover:text-accent transition-colors">Partenaires</a></li>
+                <li><a href="#contact" class="text-white text-lg font-heading block hover:text-accent transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Mobile language toggle removed - French only version -->
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
