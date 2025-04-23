@@ -133,11 +133,11 @@ function setupImageErrorHandling() {
         
         // For profile images
         if (alt.includes('Christophe Spies') || parent.classList.contains('profile-image')) {
-          this.src = './images/profile-image.png';
+          this.src = './images/profile-image-fake.png';
         }
         // For partner logos
         else if (parent.classList.contains('partner-logo') || alt.includes('logo')) {
-          this.src = './images/partner1.svg';
+          this.src = './images/logo-monti-full.svg'; // Updated fallback for partner logos
         }
         // For machinery/product images
         else if (alt.includes('machine') || alt.includes('équipement')) {
