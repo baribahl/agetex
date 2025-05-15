@@ -1,0 +1,29 @@
+{
+  "name": "agetex-website",
+  "version": "1.0.0",
+  "description": "Website for Agetex - Expert en Impression Textile par Transfert",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve . -l 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baribahl/agetex.git"
+  },
+  "keywords": [
+    "textile",
+    "printing",
+    "sublimation",
+    "transfer"
+  ],
+  "author": "Christophe Spies",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baribahl/agetex/issues"
+  },
+  "homepage": "https://github.com/baribahl/agetex#readme",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}

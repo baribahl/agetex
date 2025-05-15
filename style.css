@@ -54,50 +54,9 @@ body {
   width: 100%;
 }
 
-/* Active language button */
-.language-btn.active {
-  font-weight: 600;
-  box-shadow: 0 2px 10px rgba(243, 156, 18, 0.3);
-}
-
-/* Hero Section */
-.hero-image {
-  position: relative;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
-.hero-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.hero-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem;
-  background: linear-gradient(to top, rgba(44, 62, 80, 0.95), transparent);
-  border-radius: 0 0 0.5rem 0.5rem;
-}
+/* Language features removed - French only version */
 
 /* Partners Section */
-.partner-card {
-  background: white;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.partner-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-
 .partner-logo {
   height: 3rem;
   width: auto;

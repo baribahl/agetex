@@ -1,74 +1,29 @@
-// Local replacement for Moneta YJS functionality
+/**
+ * Data module for Agetex website
+ * 
+ * This file previously contained data management functionality that has been simplified
+ * as the website now uses a static approach. It's retained for potential future use
+ * if dynamic content management is needed.
+ * 
+ * Possible future enhancements:
+ * - Contact form submission handling
+ * - Theme settings management
+ * - Partner data management
+ */
 
-// Simple contact message store
-export const contactMessages = {
-    messages: [],
-    addMessage(message) {
-        this.messages.push(message);
-        localStorage.setItem('contactMessages', JSON.stringify(this.messages));
-        return message;
-    },
-    loadMessages() {
-        const stored = localStorage.getItem('contactMessages');
-        if (stored) {
-            this.messages = JSON.parse(stored);
-        }
-    }
+// Current website theme (matches Tailwind config)
+export const theme = {
+    primary: '#2C3E50',
+    accent: '#F39C12',
+    textcolor: '#4A4A4A',
+    bgcolor: '#FAFAFA',
+    light: '#ECF0F1',
+    dark: '#1A2530'
 };
 
-// Simple settings store
-export const settings = {
-    data: {
-        theme: {
-            primary: '#2C3E50',
-            accent: '#F39C12'
-        }
-    },
-    get(key) {
-        return this.data[key];
-    },
-    set(key, value) {
-        this.data[key] = value;
-        localStorage.setItem('settings', JSON.stringify(this.data));
-    },
-    loadSettings() {
-        const stored = localStorage.getItem('settings');
-        if (stored) {
-            this.data = JSON.parse(stored);
-        }
-    }
-};
-
-// Initialize
-contactMessages.loadMessages();
-settings.loadSettings();
-
-// Contact form functionality
-export function submitContactMessage(data) {
-    const message = {
-        id: Date.now().toString(),
-        name: data.name,
-        email: data.email,
-        message: data.message,
-        timestamp: new Date().toISOString(),
-        status: 'new'
-    };
-    
-    return contactMessages.addMessage(message);
-}
-
-// Always connected in local mode
-export const syncStatus = {
-    connected: true,
-    observers: new Set(),
-    
-    notify() {
-        this.observers.forEach(callback => callback(this.connected));
-    },
-    
-    onStatusChange(callback) {
-        this.observers.add(callback);
-        callback(this.connected);
-        return () => this.observers.delete(callback);
-    }
+// export partner logos for potential use in dynamic loading
+export const partnerLogos = {
+    sublitex: './images/logo-sublitex-full.svg',
+    monti: './images/logo-monti-full.svg',
+    tts: './images/logo-tts-full.svg'
 };

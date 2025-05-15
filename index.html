@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Agetex - Expert en impression textile par transfert et machines pour l'industrie textile">
     <meta name="keywords" content="textile printing, transfer paper, textile machinery, sublimation, Monti Antonio, Sublitex, TTS">
+    <!-- Enhanced SEO meta tags -->
+    <meta name="author" content="Christophe Spies">
+    <meta property="og:title" content="Agetex - Expert en Impression Textile par Transfert">
+    <meta property="og:description" content="Agetex représente 3 métiers clés de la sublimation industrielle, en partenariat avec des leaders du secteur.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.agetex.fr/">
+    <meta property="og:image" content="./images/agetex-logo-nav-updated.svg">
+    <!-- Favicon -->
+    <link rel="icon" href="./images/agetex-logo-nav-updated.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/agetex-logo-nav-updated.svg">
     <title>Agetex - Expert en Impression Textile par Transfert</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,7 +22,6 @@
     <link rel="stylesheet" href="./style.css">
     <!-- Removed translations.js as we're keeping only French version -->
     <script type="module" src="./data.js"></script>
-    <script type="module" src="./contact.js"></script>
     <script src="./script.js" defer></script>
     <script src="./partners.js" defer></script>
     <!-- Language toggle script removed - French only version -->
@@ -44,23 +53,23 @@
     <nav class="fixed w-full bg-primary text-white shadow-xl z-50 border-b-2 border-accent">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="font-heading text-2xl font-bold flex items-center">
-                        <img src="./agetex-logo-nav-updated.svg" 
-                             alt="Agetex" 
-                             class="h-10 nav-logo"
+                <div class="flex items-center">                    <a href="#" class="flex items-center">
+                        <img src="./images/agetex-logo-nav-updated.svg" 
+                             alt="Agetex"
+                             class="h-10 nav-logo mr-3" 
                              onerror="this.src='./images/agetex-logo-nav-updated.svg'">
+                        <span class="font-subheading text-sm text-gray-200 hidden md:inline whitespace-nowrap">Sublimation / Impression transfert</span>
                     </a>
                 </div>
                 <div class="hidden md:flex items-center space-x-10">
                     <a href="#about" class="nav-link text-white hover:text-accent transition-colors font-medium text-base tracking-wide">
-                        <span data-i18n="nav-about">À propos</span>
+                        <span>À propos</span>
                     </a>
                     <a href="#partners" class="nav-link text-white hover:text-accent transition-colors font-medium text-base tracking-wide">
-                        <span data-i18n="nav-partners">Partenaires</span>
+                        <span>Partenaires</span>
                     </a>
                     <a href="#contact" class="nav-link text-white hover:text-accent transition-colors font-medium text-base tracking-wide">
-                        <span data-i18n="nav-contact">Contact</span>
+                        <span>Contact</span>
                     </a>
                 </div>
                 <!-- Language toggle removed - French only version -->
@@ -68,127 +77,39 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-heading font-bold mb-6 text-primary">
-                        <span class="text-accent">Agetex</span> - Expert en Impression Textile par Transfert
-                    </h1>
-                    <p class="text-lg font-subheading text-textcolor mb-8 leading-relaxed">
-                        Depuis 1994, nous combinons expertise technique et service client pour représenter des leaders mondiaux de l'industrie textile et de la sublimation.
-                    </p>
-                    <div class="flex flex-col sm:flex-row flex-wrap gap-4">
-                        <a href="#contact" class="inline-block bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-accent transition-colors shadow-lg text-center">
-                            Contactez-nous
-                        </a>
-                        <a href="#partners" class="inline-flex items-center justify-center bg-transparent border border-gray-300 text-primary px-6 py-3 rounded-md font-medium hover:border-primary hover:text-accent transition-colors text-center">
-                            <i class="far fa-handshake mr-2"></i>Nos partenaires
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="relative">
-                    <img src="./images/profile-image-fake.png"
-                         alt="Christophe Spies - Expert en Impression Textile par Transfert"
-                         class="w-full h-auto object-cover rounded-md shadow-lg"
-                         onerror="handleImageError(this, 'profile')">
-                    <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-primary/90 to-transparent rounded-b-md">
-                        <h3 class="text-white font-heading text-xl">Christophe Spies</h3>
-                        <p class="text-white/90 font-sans">Agent commercial textile depuis 1994</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section id="about" class="py-12 bg-gradient-to-b from-white to-bgcolor">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-primary mb-12 section-title">À propos</h2>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-                <!-- Left column - Company description -->
-                <div class="lg:col-span-7">
-                    <p class="text-lg mb-6 text-primary">
-                        <span class="font-semibold text-accent">Agetex</span> représente des fabricants leaders dans l'industrie de l'impression textile par transfert et sublimation.
-                    </p>
-                    
-                    <div class="mb-8">
-                        <h3 class="text-xl font-subheading font-semibold text-primary mb-4" data-i18n="about-expertise-title">Notre valeur ajoutée</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5 mr-3">
-                                    <i class="fas fa-check text-accent text-sm"></i>
-                                </div>
-                                <div>
-                                    <p class="font-medium text-primary" data-i18n="about-service-title">Service après-vente complet</p>
-                                    <p class="text-sm text-gray-600" data-i18n="about-service-desc">Installation, support technique, maintenance et pièces détachées</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5 mr-3">
-                                    <i class="fas fa-check text-accent text-sm"></i>
-                                </div>
-                                <div>
-                                    <p class="font-medium text-primary" data-i18n="about-experience-title">30+ ans d'expérience</p>
-                                    <p class="text-sm text-gray-600" data-i18n="about-experience-desc">Expertise technique reconnue auprès des leaders de l'industrie</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <div class="flex-shrink-0 w-6 h-6 rounded-full bg-accent/10 flex items-center justify-center mt-0.5 mr-3">
-                                    <i class="fas fa-check text-accent text-sm"></i>
-                                </div>
-                                <div>
-                                    <p class="font-medium text-primary" data-i18n="about-network-title">Réseau international</p>
-                                    <p class="text-sm text-gray-600" data-i18n="about-network-desc">Distribution et support technique dans plusieurs pays</p>
-                                </div>
-                            </li>
-                        </ul>
+    <section id="about" class="pt-24 pb-16 bg-gradient-to-b from-white to-bgcolor"> <!-- Adjusted pt-24 to account for fixed navbar -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Removed H1 Agetex and H2 Subtitle -->
+            <div class="text-lg font-body text-textcolor mt-8 md:mt-0 mb-8 text-left md:text-center"> <!-- Adjusted mt-8 / md:mt-0 -->
+                <p class="text-xl mb-10">Agetex représente 3 métiers clés de la sublimation industrielle, en partenariat avec des leaders du secteur :</p>
+                <div class="mt-8 grid md:grid-cols-3 gap-x-8 gap-y-6 text-left">
+                    <!-- Metier 1: Sublitex -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                        <i class="fas fa-print text-accent text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Papier Transfert & Impression Digitale</h3>
+                        <p class="text-gray-700 mb-4 text-sm flex-grow">Solutions d'impression rotative et digitale pour le papier transfert, en collaboration avec :</p>
+                        <a href="http://www.sublitex.com" class="inline-block bg-accent text-white font-semibold py-2 px-4 rounded-md hover:bg-primary transition-colors duration-300 mt-auto self-start" target="_blank" rel="noopener noreferrer">
+                            Sublitex <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                        </a>
                     </div>
-                    
-                    <!-- Removed redundant region mentions -->
-                </div>
-                
-                <!-- Right column - Expertise areas -->
-                <div class="lg:col-span-5">
-                    <div class="bg-white rounded-lg shadow-sm p-6">
-                        <h3 class="text-xl font-subheading font-semibold text-primary mb-6 border-b border-accent/30 pb-2" data-i18n="about-products-title">
-                            Nos produits
-                        </h3>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
-                                    <i class="fas fa-print text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-primary">Papiers transfert sublimation</h4>
-                                    <p class="text-sm text-gray-600">Solutions adaptées à tous types d'applications pour l'impression textile</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
-                                    <i class="fas fa-industry text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-primary">Calandres et presses</h4>
-                                    <p class="text-sm text-gray-600">Équipements de haute qualité pour le transfert thermique</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start">
-                                <div class="flex-shrink-0 w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mr-4">
-                                    <i class="fas fa-tools text-accent text-xl"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-medium text-primary">Consommables techniques</h4>
-                                    <p class="text-sm text-gray-600">Produits complémentaires pour optimiser vos processus d'impression</p>
-                                </div>
-                            </div>
-                        </div>
+                    <!-- Metier 2: Monti Antonio -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                        <i class="fas fa-cogs text-accent text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Calandres & Presses</h3>
+                        <p class="text-gray-700 mb-4 text-sm flex-grow">Fourniture de calandres et presses thermiques de haute qualité, en partenariat avec :</p>
+                        <a href="http://www.montiantonio.com" class="inline-block bg-accent text-white font-semibold py-2 px-4 rounded-md hover:bg-primary transition-colors duration-300 mt-auto self-start" target="_blank" rel="noopener noreferrer">
+                            Monti Antonio <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                        </a>
+                    </div>
+                    <!-- Metier 3: TTS -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
+                        <i class="fas fa-swatchbook text-accent text-4xl mb-4"></i>
+                        <h3 class="text-xl font-semibold text-primary mb-3">Solutions Textiles & Papiers Techniques</h3>
+                        <p class="text-gray-700 mb-4 text-sm flex-grow">Gammes complètes de textiles pour communication visuelle, papiers de sublimation et de protection, avec :</p>
+                        <a href="http://www.texo-trade.com" class="inline-block bg-accent text-white font-semibold py-2 px-4 rounded-md hover:bg-primary transition-colors duration-300 mt-auto self-start" target="_blank" rel="noopener noreferrer">
+                            Texo Trade Service (TTS) <i class="fas fa-external-link-alt text-xs ml-1"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -226,7 +147,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- End of partner-header -->
                     
                     <!-- Partner content panel -->
                     <div class="partner-content bg-white rounded-lg shadow-lg p-6 mt-4 overflow-visible">
@@ -234,44 +155,26 @@
                             <!-- Left column for text content -->
                             <div class="lg:col-span-5">
                                 <div class="bg-light p-6 rounded-lg h-full">
-                                <p class="text-gray-700 mb-4">
-                                    Leader européen incontesté et premier fournisseur du marché français, Monti Antonio excelle dans la conception et la fabrication de calandres et de solutions de transfert thermique pour les professionnels de l'impression textile, du contre-collage et de la lamination.
-                                </p>
-                                
-                                <h4 class="text-xl font-heading font-semibold text-primary mb-4 border-b border-accent pb-2">
-                                    <i class="fas fa-industry text-accent mr-2"></i>Points Forts
-                                </h4>
-                                
-                                <ul class="space-y-3 mb-4">
-                                    <li class="flex items-start">
-                                        <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
-                                        <span>Calandres jusqu'à <strong class="font-medium">550cm</strong> de laize</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i class="fas fa-tools text-accent mt-1 mr-2"></i>
-                                        <span>Service complet : installation, maintenance et pièces détachées</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i class="fas fa-award text-accent mt-1 mr-2"></i>
-                                        <span>Garantie italienne de qualité et fiabilité depuis plus de 50 ans</span>
-                                    </li>
-                                </ul>
-                                
-                                <div class="mt-6">
-                                    <img src="./images/photo-monti-machine-no-bg.png" 
-                                         alt="Machine Monti Antonio" 
-                                         class="w-full h-auto"
-                                         onerror="handleImageError(this, 'machinery')">
-                                </div>
-
-                                <div class="mt-6 text-right">
-                                    <a href="https://www.montiantonio.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-accent hover:text-primary transition-colors">
-                                        <span class="mr-1">Visiter le site officiel</span>
+                                    <p class="text-gray-700 mb-6">
+                                        Monti Antonio S.p.A. est une entreprise leader mondial dans la production de machines pour l'impression par sublimation, le thermocollage et le laminage. Fondée en 1959, elle est reconnue pour son innovation et la qualité de ses équipements.
+                                    </p>
+                                    <p class="text-gray-700 mb-6">
+                                        Leurs calandres sont réputées pour leur fiabilité et leur performance, adaptées à une large gamme d'applications textiles, du vêtement de sport à la signalétique.
+                                    </p>
+                                    <p class="text-gray-700 mb-6">
+                                        Agetex collabore étroitement avec Monti Antonio pour fournir des solutions complètes, incluant l'installation, la formation et le service après-vente, garantissant ainsi une productivité optimale pour ses clients.
+                                    </p>
+                                    <p class="text-gray-700 mb-6">
+                                        Que ce soit pour des presses à plat ou des calandres rotatives, Monti Antonio offre une technologie de pointe pour répondre aux exigences les plus élevées de l'industrie de l'impression textile.
+                                    </p>
+                                    <a href="http://www.montiantonio.com/fr"
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       class="inline-flex items-center text-accent hover:text-primary transition-colors mt-4">
+                                        <span class="mr-1">www.montiantonio.com/fr</span>
                                         <i class="fas fa-external-link-alt text-xs"></i>
                                     </a>
-                                </div>
-                            </div>
-                            
+                                </div><!-- End of text content -->
                             </div>
                             
                             <!-- Right column for media -->
@@ -283,8 +186,8 @@
                                      onerror="handleImageError(this, 'machinery')">
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div><!-- End of partner-content -->
+                </div><!-- End of Monti Antonio partner-accordion -->
                 
                 <!-- Sublitex Partner Card -->
                 <div class="partner-accordion">
@@ -310,7 +213,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- End of partner-header -->
                     
                     <!-- Partner content panel -->
                     <div class="partner-content bg-white rounded-lg shadow-lg p-6 mt-4 overflow-visible" id="sublitex-section">
@@ -318,39 +221,23 @@
                             <!-- Left column for text -->
                             <div class="lg:col-span-5">
                                 <div class="bg-light p-6 rounded-lg h-full">
-                                <p class="text-gray-700 mb-4">
-                                    Sublitex est un leader mondial de l'impression digitale pour le marché de la mode, du sport, et de l'ameublement avec une capacité de production exceptionnelle.
-                                </p>
-                                
-                                <h4 class="text-xl font-heading font-semibold text-primary mb-4 border-b border-accent pb-2">
-                                    <i class="fas fa-print text-accent mr-2"></i>Capacités industrielles
-                                </h4>
-                                
-                                <ul class="space-y-3 mb-6">
-                                    <li class="flex items-start">
-                                        <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
-                                        <span><strong class="font-medium">40.000m/jour</strong> de capacité d'impression</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i class="fas fa-ruler-horizontal text-accent mt-1 mr-2"></i>
-                                        <span>Laize <strong class="font-medium">160cm et 185cm</strong></span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i class="fas fa-palette text-accent mt-1 mr-2"></i>
-                                        <span>Collections renouvelées <strong class="font-medium">chaque semaine</strong></span>
-                                    </li>
-                                </ul>
-
-                                <!-- Videos moved to right column -->
-
-                                    <a href="https://www.sublitex.com/" 
-                                       target="_blank" 
-                                       rel="noopener noreferrer" 
+                                    <p class="text-gray-700 mb-6">
+                                        Dans son usine de 20 000 m² à Alba, près de Turin, Sublitex imprime 50. 000 m/jour de papier et film transfert.
+                                    </p>
+                                    <p class="text-gray-700 mb-6">
+                                        Riche de la culture textile imprimé du groupe Miroglio , près de 10 stylistes proposent chaque jour de nouveaux dessins et coloris répondants aux attentes des marchés de la mode.
+                                    </p>
+                                    <p class="text-gray-700 mb-6">
+                                        Parallèlement, nos infographistes réalisent et préparent vos fichiers et créations pour l’impression de vos commandes industrielles sur papier de sublimation.
+                                    </p>
+                                    <a href="http://www.sublitex.com"
+                                       target="_blank"
+                                       rel="noopener noreferrer"
                                        class="inline-flex items-center text-accent hover:text-primary transition-colors mt-4">
-                                        <span class="mr-1">Visiter le site officiel</span>
+                                        <span class="mr-1">www.sublitex.com</span>
                                         <i class="fas fa-external-link-alt text-xs"></i>
                                     </a>
-                                </div>
+                                </div><!-- End of text content -->
                             </div>
                             
                             <!-- Right column for media -->
@@ -382,10 +269,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div><!-- End of media column -->
                         </div>
-                    </div>
-                </div>
+                    </div><!-- End of partner-content -->
+                </div><!-- End of Sublitex partner-accordion -->
                 
                 <!-- TTS Partner Card -->
                 <div class="partner-accordion">
@@ -411,7 +298,7 @@
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- End of partner-header -->
                     
                     <!-- Partner content panel -->
                     <div class="partner-content bg-white rounded-lg shadow-lg p-6 mt-4 overflow-visible">
@@ -419,37 +306,25 @@
                             <!-- Left column for text -->
                             <div class="lg:col-span-5">
                                 <div class="bg-light p-6 rounded-lg h-full">
-                                <p class="text-gray-700 mb-4">
-                                    TTS est le leader européen des solutions textiles pour la communication visuelle et l'impression numérique, offrant une gamme complète de produits innovants et écologiques.
-                                </p>
-                                
-                                <h4 class="text-xl font-heading font-semibold text-primary mb-4 border-b border-accent pb-2">
-                                    <i class="fas fa-box-open text-accent mr-2"></i>Notre Gamme
-                                </h4>
-                                
-                                <ul class="space-y-3 mb-4">
-                                    <li class="flex items-start">
-                                        <i class="fas fa-check-circle text-accent mt-1 mr-2"></i>
-                                        <span>Papiers de sublimation haute performance</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i class="fas fa-shield-alt text-accent mt-1 mr-2"></i>
-                                        <span>Papiers de protection pour calandres</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <i class="fas fa-print text-accent mt-1 mr-2"></i>
-                                        <span>Supports spéciaux pour sérigraphie</span>
-                                    </li>
-                                </ul>
-
-                                    <a href="https://www.texo-trade.com/" 
-                                       target="_blank" 
-                                       rel="noopener noreferrer" 
+                                    <p class="text-gray-700 mb-6">
+                                        Soit via TTS (distributeur), soit via Coldenhove (papetier) Agetex vous propose sur stock :
+                                    </p>
+                                    <ul class="list-disc list-inside space-y-2 mb-6 text-gray-700">
+                                        <li>papier transfert de 57 à 140 gr/m² : par simple rouleau, palettes ou jumbos de laize 111 à 320 cm</li>
+                                        <li>papier de protection de 111 à 325 cm de laize et dans tous les diamètres</li>
+                                        <li>textiles sublimables pour communication visuelle de 100 à 505 cm (maille drapeaux, display, toile de tente, non tissé, moquette…)</li>
+                                    </ul>
+                                    <p class="text-gray-700 mb-6">
+                                        L’ensemble de ces références étant en stock, l’acheminement est rapide et quotidien vers toute la France.
+                                    </p>
+                                    <a href="http://www.texo-trade.com/fr"
+                                       target="_blank"
+                                       rel="noopener noreferrer"
                                        class="inline-flex items-center text-accent hover:text-primary transition-colors mt-4">
-                                        <span class="mr-1">Visiter le site officiel</span>
+                                        <span class="mr-1">www.texo-trade.com/fr</span>
                                         <i class="fas fa-external-link-alt text-xs"></i>
                                     </a>
-                                </div>
+                                </div><!-- End of text content -->
                             </div>
                             
                             <!-- Right column for media -->
@@ -473,20 +348,20 @@
                                          style="aspect-ratio: 1/1; object-fit: cover;"
                                          onerror="handleImageError(this, 'machinery')">
                                 </div>
-                            </div>
+                            </div><!-- End of media column -->
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div><!-- End of partner-content -->
+                </div><!-- End of TTS partner-accordion -->
+            </div><!-- End of partners grid -->
         </div>
-    </section>
+    </section><!-- End of partners section -->
 
     <!-- Contact Section -->
     <section id="contact" class="py-16 bg-bgcolor">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-heading font-bold text-primary mb-12 section-title">Contact</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-12"> <!-- Adjusted to single column -->
                 <!-- Contact info column -->
                 <div>
                     <div class="bg-white rounded-lg shadow-sm p-6 mb-6">
@@ -498,9 +373,6 @@
                             <div>
                                 <h3 class="text-xl font-heading font-bold">Christophe Spies</h3>
                                 <p class="text-gray-600">Agent commercial dans l'industrie textile</p>
-                                <p class="text-accent font-medium text-sm mt-1">
-                                    <i class="far fa-calendar-alt mr-1"></i> Fondateur d'Agetex depuis 1994
-                                </p>
                             </div>
                         </div>
                         
@@ -509,11 +381,11 @@
                                 <i class="fas fa-phone-alt text-accent mt-1 mr-4 w-5 text-center"></i>
                                 <div>
                                     <h4 class="font-sans font-semibold text-primary">Téléphone</h4>
-                                    <a href="tel:+33000000000" class="text-gray-700 hover:text-accent transition-colors">+33 00 00 00 00</a>
+                                    <a href="tel:+33685209203" class="text-gray-700 hover:text-accent transition-colors">+33 6 85 20 92 03</a> <!-- Phone number updated -->
                                 </div>
                             </div>
                             
-                            <div class="flex items-start">
+                            <div class="flex items-start"> <!-- Corrected structure for email block -->
                                 <i class="fas fa-envelope text-accent mt-1 mr-4 w-5 text-center"></i>
                                 <div>
                                     <h4 class="font-sans font-semibold text-primary">Email</h4>
@@ -526,7 +398,6 @@
                                 <div>
                                     <h4 class="font-sans font-semibold text-primary">Localisation</h4>
                                     <p class="text-gray-700">Chambéry, France</p>
-                                    <!-- Region information removed -->
                                 </div>
                             </div>
                             
@@ -538,143 +409,11 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Company background - very brief -->
-                    <div class="bg-white rounded-lg shadow-sm p-6">
-                        <h4 class="font-subheading font-semibold text-xl mb-4 pb-2 border-b border-gray-200">
-                            <i class="fas fa-briefcase text-accent mr-2"></i> Expérience
-                        </h4>
-                        <div class="space-y-4">
-                            <div>
-                                <h5 class="font-medium text-primary">Chef d'entreprise - Agetex</h5>
-                                <p class="text-sm text-accent">
-                                    <i class="far fa-calendar-alt mr-1"></i> Depuis 1994
-                                </p>
-                                <p class="text-sm text-gray-600 mt-1">
-                                    Représentation de leaders de l'industrie textile au niveau international.
-                                </p>
-                            </div>
-                            
-                            <div>
-                                <h5 class="font-medium text-primary">Area Manager - KBC (Allemagne)</h5>
-                                <p class="text-sm text-accent">
-                                    <i class="far fa-calendar-alt mr-1"></i> 1989 - 1994
-                                </p>
-                                <p class="text-sm text-gray-600 mt-1">
-                                    Division papier transfert.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Contact form column -->
-                <div>
-                    <div class="bg-white rounded-lg shadow-sm p-6">
-                        <h3 class="text-xl font-subheading font-semibold text-primary mb-6 pb-3 border-b border-gray-200">
-                            <i class="far fa-envelope text-accent mr-2"></i>
-                            Contactez-nous
-                        </h3>
-                        <p class="mb-6 text-gray-600">
-                            N'hésitez pas à nous contacter pour toute demande concernant nos services ou nos partenaires.
-                        </p>
-                        
-                        <form class="space-y-5" id="contact-form">
-                            <div class="form-group">
-                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
-                                    <span class="required">*</span>
-                                    <span data-i18n="contact-name">Nom</span>
-                                </label>
-                                <div class="relative rounded-md shadow-sm">
-                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                        <i class="far fa-user text-gray-400"></i>
-                                    </div>
-                                    <input type="text" 
-                                           id="name" 
-                                           name="name" 
-                                           required
-                                           class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-accent focus:border-accent transition-colors" 
-                                           placeholder="Votre nom">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                                    <span class="required">*</span>
-                                    <span data-i18n="contact-email">Email</span>
-                                </label>
-                                <div class="relative rounded-md shadow-sm">
-                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                        <i class="far fa-envelope text-gray-400"></i>
-                                    </div>
-                                    <input type="email" 
-                                           id="email" 
-                                           name="email" 
-                                           required
-                                           class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-accent focus:border-accent transition-colors" 
-                                           placeholder="votre@email.com">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
-                                    <span class="required">*</span>
-                                    <span data-i18n="contact-message">Message</span>
-                                </label>
-                                <div class="relative rounded-md shadow-sm">
-                                    <div class="absolute top-3 left-3 flex items-start pointer-events-none">
-                                        <i class="far fa-comment text-gray-400"></i>
-                                    </div>
-                                    <textarea id="message" 
-                                              name="message" 
-                                              rows="4" 
-                                              required
-                                              class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-accent focus:border-accent transition-colors" 
-                                              placeholder="Comment puis-je vous aider ?"></textarea>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <button type="submit" 
-                                        class="w-full bg-primary text-white px-4 py-3 rounded-lg hover:bg-accent focus:outline-none transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                                        disabled>
-                                    <span class="flex items-center justify-center">
-                                        <i class="fas fa-paper-plane mr-2"></i>
-                                        <span data-i18n="contact-send">Envoyer le message</span>
-                                    </span>
-                                </button>
-                                
-                                <!-- Removed sync status indicator as requested -->
-                                <!-- Connection status indicator removed -->
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <!-- Partners quick links -->
-                    <div class="mt-6">
-                        <h4 class="font-medium text-primary mb-3">
-                            <i class="fas fa-handshake text-accent mr-2"></i> Nos partenaires
-                        </h4>
-                        <div class="flex flex-wrap gap-3">
-                            <a href="http://www.montiantonio.com" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white px-3 py-1.5 rounded-md shadow-sm hover:shadow-md transition-all border border-gray-200 hover:border-accent">
-                                <span class="text-accent">Monti Antonio</span>
-                                <i class="fas fa-external-link-alt text-xs ml-1 text-gray-400"></i>
-                            </a>
-                            <a href="http://www.sublitex.com" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white px-3 py-1.5 rounded-md shadow-sm hover:shadow-md transition-all border border-gray-200 hover:border-accent">
-                                <span class="text-accent">Sublitex</span>
-                                <i class="fas fa-external-link-alt text-xs ml-1 text-gray-400"></i>
-                            </a>
-                            <a href="http://www.texo-trade.com" target="_blank" rel="noopener noreferrer" class="flex items-center bg-white px-3 py-1.5 rounded-md shadow-sm hover:shadow-md transition-all border border-gray-200 hover:border-accent">
-                                <span class="text-accent">TTS</span>
-                                <i class="fas fa-external-link-alt text-xs ml-1 text-gray-400"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    </div><!-- End of contact info -->
+                </div><!-- End of contact info column -->
             </div>
         </div>
-    </section>
+    </section><!-- End of contact section -->
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200">
@@ -682,7 +421,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <p class="text-sm text-gray-500">
-                        © 2024 Christophe Spies - Agetex. Tous droits réservés.
+                        © 2025 Christophe Spies - Agetex. Tous droits réservés.
                     </p>
                 </div>
                 
@@ -693,16 +432,13 @@
                 </div>
                 
                 <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">
+                    <a href="https://fr.linkedin.com/in/christophe-spies-94a82415" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-accent transition-colors">
                         <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-accent transition-colors">
-                        <i class="fab fa-facebook"></i>
                     </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </footer><!-- End of footer -->
 
     <!-- Mobile menu toggle and back to top buttons -->
     <div class="md:hidden fixed bottom-6 right-6 bg-primary text-white p-4 rounded-full shadow-lg z-40 hover:bg-accent transition-colors" id="mobile-menu-button">
@@ -729,7 +465,7 @@
             </ul>
         </nav>
         <!-- Mobile language toggle removed - French only version -->
-    </div>
+    </div><!-- End of mobile menu -->
 </body>
 </html>
 

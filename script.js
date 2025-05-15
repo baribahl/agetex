@@ -112,7 +112,7 @@ function initBackToTop() {
  */
 function initPartnerAccordions() {
   // Partner accordions now handled by partners.js to avoid duplication
-  console.log('Partner accordions initialized in partners.js');
+  // console.log('Partner accordions initialized in partners.js'); // Commented out console.log
 }
 
 /**
@@ -132,16 +132,16 @@ function setupImageErrorHandling() {
         const parent = img.parentNode;
         
         // For profile images
-        if (alt.includes('Christophe Spies') || parent.classList.contains('profile-image')) {
+        if (alt.includes('Christophe Spies') || (parent && parent.classList.contains('profile-image'))) { // Added null check for parent
           this.src = './images/profile-image-fake.png';
         }
         // For partner logos
-        else if (parent.classList.contains('partner-logo') || alt.includes('logo')) {
-          this.src = './images/logo-monti-full.svg'; // Updated fallback for partner logos
+        else if ((parent && parent.classList.contains('partner-logo')) || (alt && alt.includes('logo'))) { // Added null check for parent and alt
+          this.src = './images/agetex-logo-nav-updated.svg'; // Generic fallback for partner logos
         }
         // For machinery/product images
-        else if (alt.includes('machine') || alt.includes('équipement')) {
-          this.src = './images/machinery.png';
+        else if (alt && alt.includes('machine') || (alt && alt.includes('équipement'))) { // Added null check for alt
+          this.src = './images/photo-monti-machine-no-bg.png'; // Using existing machinery image as fallback
         }
         // Default fallback
         else {

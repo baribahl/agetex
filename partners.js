@@ -38,9 +38,8 @@ window.onYouTubeIframeAPIReady = function() {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('Loading partner accordions...');
+    // const partnerCards = document.querySelectorAll('.partner-accordion');
     const partnerCards = document.querySelectorAll('.partner-accordion');
-    console.log('Found partner cards:', partnerCards.length);
     let activeCard = null;
 
     function closeAllCards() {
@@ -84,10 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const toggleBtn = card.querySelector('.toggle-btn i');
 
         if (header && content) {
-            console.log(`Setting up click handler for partner card ${index+1}`);
-            
             header.addEventListener('click', function(e) {
-                console.log(`Partner card ${index+1} clicked`);
                 e.preventDefault();
                 const isActive = card.classList.contains('active');
 
@@ -168,10 +164,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // Error handling for media
 function handleImageError(img, type) {
     const fallbacks = {
-        'profile': './images/profile-image.png',
-        'partner-logo': './images/agetex-logo-correct.svg',
-        'machinery': './images/machinery.png',
-        'default': './images/agetex-logo-correct.svg'
+        'profile': './images/profile-image-fake.png',
+        'partner-logo': './images/agetex-logo-nav-updated.svg',
+        'machinery': './images/photo-monti-machine-no-bg.png', // Updated to use existing image
+        'default': './images/agetex-logo-nav-updated.svg'
     };
 
     img.src = fallbacks[type] || fallbacks.default;
