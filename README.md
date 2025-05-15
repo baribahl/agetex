@@ -1,4 +1,4 @@
-# Agetex - Site Web Professionnel
+﻿# Agetex - Site Web Professionnel
 
 Site web officiel d'Agetex, représentant expert de solutions pour l'industrie de l'impression textile par transfert.
 
@@ -50,4 +50,4 @@ Christophe Spies - [agetex73@wanadoo.fr](mailto:agetex73@wanadoo.fr)
 
 ## Licence
 
-Tous droits réservés - © 2025 Christophe Spies - Agetex
+Tous droits réservés -  2025 Christophe Spies - Agetex
