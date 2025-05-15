@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Error handling for media
 function handleImageError(img, type) {
     const fallbacks = {
-        'profile': './images/profile-image-fake.png',
+        'profile': './images/profile-image-BW-low-res.jpg',
         'partner-logo': './images/agetex-logo-nav-updated.svg',
         'machinery': './images/photo-monti-machine-no-bg.png', // Updated to use existing image
         'default': './images/agetex-logo-nav-updated.svg'

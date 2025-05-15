@@ -133,7 +133,7 @@ function setupImageErrorHandling() {
         
         // For profile images
         if (alt.includes('Christophe Spies') || (parent && parent.classList.contains('profile-image'))) { // Added null check for parent
-          this.src = './images/profile-image-fake.png';
+          this.src = './images/profile-image-BW-low-res.jpg';
         }
         // For partner logos
         else if ((parent && parent.classList.contains('partner-logo')) || (alt && alt.includes('logo'))) { // Added null check for parent and alt
